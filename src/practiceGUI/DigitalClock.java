@@ -5,8 +5,10 @@ import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DigitalClock {
-    public static void main(String[] args) {
+public class DigitalClock
+{
+    public static void main(String[] args)
+    {
         // Create the frame (window)
         JFrame frame = new JFrame("Digital Clock");
 

@@ -33,6 +33,7 @@ public class SmartMirror
         dateLabel.setForeground(Color.WHITE);
         // Center the date text horizontally
         dateLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        
 
         // Set the window background color to black
         frame.getContentPane().setBackground(Color.BLACK);
