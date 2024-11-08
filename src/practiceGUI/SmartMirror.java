@@ -49,11 +49,11 @@ public class SmartMirror
         // If the window is closed, the program will stop
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Add a KeyBinding to close the app when 'Esc' is pressed
+        // Add a KeyBinding to close the app when the Esc key is pressed
         frame.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
              .put(KeyStroke.getKeyStroke("ESCAPE"), "closeWindow");
         
-        // Define what happens when 'Esc' is pressed
+        // What happens when 'Esc' is pressed
         frame.getRootPane().getActionMap().put("closeWindow", new AbstractAction()
         {
             /**
@@ -75,7 +75,6 @@ public class SmartMirror
         // Create a timer to update both the time and the date every second (1000 milliseconds = 1 second)
         Timer timer = new Timer(1000, e ->
         {
-            // Get the current time and format it as "HH:mm:ss" (hours:minutes:seconds)
             String currentTime = new SimpleDateFormat("HH:mm:ss").format(new Date());
             // Set the time in the label to show it on the screen
             clockLabel.setText(currentTime);
