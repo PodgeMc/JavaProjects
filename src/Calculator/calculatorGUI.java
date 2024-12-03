@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 
 public class calculatorGUI
 {
-
     private JFrame frame; // This is the window where the calculator will appear
     private JTextField display; // This is where the calculator shows what you're typing
     private String currentInput = ""; // This holds what you're typing
@@ -162,17 +161,16 @@ public class calculatorGUI
                         if (num2 != 0)
                         {
                             result = num1 / num2; // Divide numbers
-                        }
-                        
+                        }       
                         else
                         {
                             throw new ArithmeticException("Division by zero");
                         }
                         break;
                 }
-
                 return String.valueOf(result); // Return the result as a string
             }
+            
             catch (Exception e)
             {
                 return "Error"; // If something goes wrong, return "Error"
