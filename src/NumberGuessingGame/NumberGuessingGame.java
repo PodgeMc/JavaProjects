@@ -101,20 +101,24 @@ public class NumberGuessingGame
             {
                 messageLabel.setText("Too low! Try again.");
             }
+            
             else if (userGuess > targetNumber)
             {
                 messageLabel.setText("Too high! Try again.");
             }
+            
             else
             {
                 messageLabel.setText("Congratulations! You guessed it in " + attempts + " attempts.");
             }
 
         }
+        
         catch (NumberFormatException ex)
         {
             messageLabel.setText("Invalid input! Please enter a number.");
         }
+        
         catch (IllegalArgumentException ex)
         {
             messageLabel.setText(ex.getMessage()); // Show range error
