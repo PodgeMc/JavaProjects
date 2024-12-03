@@ -7,7 +7,6 @@ import java.util.*;
 
 public class NumberGuessingGame
 {
-
     private JFrame frame;
     private JTextField guessField;
     private JButton guessButton;
