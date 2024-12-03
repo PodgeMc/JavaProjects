@@ -7,14 +7,12 @@ import java.util.*;
 
 public class CalendarApp
 {
-
     private JFrame frame;
     private JLabel monthLabel;
     private JPanel calendarPanel;
     private JButton[] dayButtons;
     private JComboBox<String> yearComboBox;
     private JComboBox<String> monthComboBox;
-
     private int selectedYear;
     private int selectedMonth;
 
@@ -66,6 +64,7 @@ public class CalendarApp
         {
             years[i] = String.valueOf(currentYear - 50 + i); // Years from 50 years before to 50 years after
         }
+        
         yearComboBox = new JComboBox<>(years);
         yearComboBox.setSelectedItem(String.valueOf(currentYear));
         headerPanel.add(yearComboBox);
